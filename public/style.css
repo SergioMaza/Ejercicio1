@@ -1,0 +1,57 @@
+header{
+    padding: 20px;
+    text-align: center;
+}
+
+header > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+p{ 
+    font-size: 20px;
+}
+
+section#about, #contact, #skills{
+    text-align: center;
+    padding: 20px;
+}
+
+section#projects > h2{
+    text-align: center;
+}
+
+.proyect_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta las columnas según el ancho */
+    gap: 20px; /* Espacio entre los cuadrados */
+    justify-items: center; /* Centra los elementos en cada columna */
+    padding: 0 20px; /* Padding opcional */
+}
+
+section#links{
+    text-align: center;
+}
+
+.proyect_container .cuadrado {
+    width: 300px; /* Ancho fijo de cada cuadrado */
+    height: 300px; /* Alto fijo de cada cuadrado */
+    background-color: #f0f0f0; /* Color de fondo gris claro */
+    border: 2px solid #ccc; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra el contenido dentro del cuadrado */
+}
+
+.skills-icons{
+    display: flex;
+    flex-direction: row; /* Alinea los iconos en una fila (horizontalmente) */
+    flex-wrap: wrap; /* Permite que los iconos se ajusten a múltiples filas si es necesario */
+    gap: 15px; /* Espacio entre los iconos */
+    justify-content: center; /* Centra horizontalmente los iconos */
+    align-items: center; /* Alinea verticalmente los iconos */
+}
+
